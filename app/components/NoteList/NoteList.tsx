@@ -29,7 +29,9 @@ export default function NoteList({ notes }: NoteListProps) {
           <p className={css.content}>{item.content}</p>
           <div className={css.footer}>
             <span className={css.tag}>{item.tag}</span>
-            <Link href={`/notes/${item.id}`}>View details</Link>
+            <Link href={`/notes/${item.id}`} className={css.link}>
+              View details
+            </Link>
             <button
               onClick={() => onDelete.mutate(item.id)}
               className={css.button}>
