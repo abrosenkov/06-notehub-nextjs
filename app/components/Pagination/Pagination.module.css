@@ -50,3 +50,11 @@
   opacity: 0.4;
   pointer-events: none;
 }
+
+  @media screen and (max-width: 768px) {
+  .pagination {
+    width: 100%;
+    order: 3;
+  }
+  
+}
